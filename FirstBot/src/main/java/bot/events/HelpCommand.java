@@ -16,7 +16,8 @@ public class HelpCommand extends ListenerAdapter{
 			EmbedBuilder eb = new EmbedBuilder()
 					.setThumbnail("https://pinchofyum.com/wp-content/uploads/spaghetti-9-819x1024-320x180.jpg")
 					.setTitle("Commands list")
-					.addField("commands", "!!cat \n !!dog \n !!nsfw  \n !!meme \n !!reaction \n !!cursed \n !!help",true)
+					.addField("Commands", "!!cat \n !!dog \n !!nsfw  \n !!meme \n !!reaction \n !!cursed \n !!help "
+							+ "\n !!wow",true)
 					.setFooter("Message Hexyy#1337 to report any bugs with the bot or to suggest features :)");
 			
 			

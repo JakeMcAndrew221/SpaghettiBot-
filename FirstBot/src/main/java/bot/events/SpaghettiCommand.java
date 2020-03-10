@@ -8,9 +8,9 @@ public class SpaghettiCommand extends ListenerAdapter{
 
 	@Override
 	public void onGuildMessageReceived(GuildMessageReceivedEvent e)  {
-		String i = e.getMessage().getContentRaw();
+		String i = e.getMessage().getContentRaw().toLowerCase();
 		
-		if (i.equalsIgnoreCase("spaghetti")) {
+		if (i.contains("spaghetti")) {
 			
 			File spag = new File("/Users/jake/Downloads/spag.mp4");
 			e.getChannel().sendFile(spag).queue();

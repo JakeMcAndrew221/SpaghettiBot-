@@ -8,13 +8,14 @@ import bot.events.MemeCommand;
 import bot.events.NSFWCommand;
 import bot.events.ReactionCommand;
 import bot.events.SpaghettiCommand;
+import bot.events.WowCommand;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 
 public class Bot {
 	public static void main(String args[]) throws Exception{
 		
-		 JDA jda = new JDABuilder("NjgyNzY0MjI4OTAxNjAxMzEx.Xlhv0A.aARfSEchsy3ocAcrLigA-5anBo4").build();
+		 JDA jda = new JDABuilder("NjgyNzY0MjI4OTAxNjAxMzEx.XmXhSg.lGrp7vhNghqCNkpksNSlNinCPDg").build();
 		 jda.addEventListener(new MemeCommand());
 		 jda.addEventListener(new NSFWCommand());
 		 jda.addEventListener(new ReactionCommand());
@@ -23,6 +24,7 @@ public class Bot {
 		 jda.addEventListener(new CatCommand());
 		 jda.addEventListener(new DogCommand());
 		 jda.addEventListener(new HelpCommand());
+		 jda.addEventListener(new WowCommand());
 		 
 		 
 	}
