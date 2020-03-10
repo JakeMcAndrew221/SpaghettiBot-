@@ -15,7 +15,7 @@ import net.dv8tion.jda.api.JDABuilder;
 public class Bot {
 	public static void main(String args[]) throws Exception{
 		
-		 JDA jda = new JDABuilder("NjgyNzY0MjI4OTAxNjAxMzEx.XmXhSg.lGrp7vhNghqCNkpksNSlNinCPDg").build();
+		 JDA jda = new JDABuilder("NjgyNzY0MjI4OTAxNjAxMzEx.XmcArQ.36NoGM2NHvWr7Dw7cpsMkuFScUg").build();
 		 jda.addEventListener(new MemeCommand());
 		 jda.addEventListener(new NSFWCommand());
 		 jda.addEventListener(new ReactionCommand());

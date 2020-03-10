@@ -29,8 +29,13 @@ public class NSFWCommand extends ListenerAdapter{
 		String i = e.getMessage().getContentRaw();
 		
 		if (i.equalsIgnoreCase("!!nsfw")) {
-			e.getChannel().sendFile(filee, "image.png").queue();
-			call();
+			if (e.getChannel().isNSFW()) {
+				e.getChannel().sendFile(filee, "image.png").queue();
+				call();
+			} else {
+				e.getChannel().sendMessage("This channel is not a NSFW channel!").queue();
+			}
+			
 		}	
 		
 	}

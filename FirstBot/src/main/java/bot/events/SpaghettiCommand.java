@@ -10,7 +10,7 @@ public class SpaghettiCommand extends ListenerAdapter{
 	public void onGuildMessageReceived(GuildMessageReceivedEvent e)  {
 		String i = e.getMessage().getContentRaw().toLowerCase();
 		
-		if (i.contains("spaghetti")) {
+		if (i.contains("spaghetti") || i.contentEquals("!!spaghetti")) {
 			
 			File spag = new File("/Users/jake/Downloads/spag.mp4");
 			e.getChannel().sendFile(spag).queue();

@@ -22,10 +22,13 @@ public class CursedCommand extends ListenerAdapter{
 		String i = e.getMessage().getContentRaw();
 		
 		if (i.equalsIgnoreCase("!!cursed")) {
-			e.getChannel().sendFile(filee, "image.png").queue();
-			call();
-		}	
-		
+			if (e.getChannel().isNSFW()) {
+				e.getChannel().sendFile(filee, "image.png").queue();
+				call();
+			} else {
+				e.getChannel().sendMessage("This channel is not a NSFW channel!").queue();
+			}
+		}		
 	}
 	
 	public void call () {
